@@ -1,0 +1,4 @@
+TAUDEM_PATH_LINUX: '/usr/src/TauDEM-5.3.8'
+TAUDEM_PATH_WIN: 'C:\Program Files\TauDEM\TauDEM5Exe'
+MPIEXEC_PATH_WIN: 'C:\Program Files\Microsoft MPI\Bin'
+DEFAULT_NR_PROCESSES: 16
