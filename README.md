@@ -5,13 +5,11 @@ A tool for calling Taudem executables by means of python functions.
 Usage example:
 
 ```python
-from taudem_functions import pit_remove
+from taudem_functions import DataWrapper, pit_remove
 
-pit_remove(
-    z=r"path_to/dem.tif",
-    fel=r"path_to/filled_dem.tif"
-)
+dtm = DataWrapper('dtm.tif') # Input, it does exist
+fel = DataWrapper('fel.tif') # Output, it does not exist, but it will be created by the function
+
+pit_remove(z=dtm, fel=fel)
 ```
-
-Taudem path, MPI path, and number of processes to be used must be set in *taudem_settings.yaml*. 
 
